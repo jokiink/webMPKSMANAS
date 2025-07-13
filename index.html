@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAJELIS PERWAKILAN KELAS - SMA Negeri 1 ALAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+        }
+        
+        .floating-btn {
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .floating-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #3b82f6;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-2 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="c:\Users\MyBook Hype AMD\Downloads\mpklogo.png" alt="Logo MPK SMA Negeri 1 Alas" class="mr-4 rounded-lg border-white border-2 w-16" />
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">MAJELIS PERWAKILAN KELAS</h1>
+                        <p class="text-blue-100">SMA Negeri 1 ALAS</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="flex space-x-1 md:space-x-4">
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('hero')">Home</a></li>
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('informasi')">Informasi</a></li>
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('tatib')">Tata Tertib</a></li>
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('jadwal')">Jadwal Kegiatan</a></li>
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="openGoogleForm()">Lapor MPK!</a></li>
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="openInstagram()">Hubungi Kami</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Selamat Datang di Portal MPK SMAN 1 ALAS</h2>
+            <p class="text-lg text-blue-800 max-w-3xl mx-auto mb-8">
+                Wadah informasi dan media aspirasi siswa SMA Negeri 1 Alas. MPK hadir untuk mendengarkan dan menyalurkan suara serta keluhan siswa.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#informasi" class="floating-btn bg-white text-blue-600 font-medium py-3 px-6 rounded-lg" onclick="showSection('informasi')">Lihat Informasi</a>
+                <a href="#laporan" class="floating-btn bg-blue-600 text-white font-medium py-3 px-6 rounded-lg" onclick="openGoogleForm()">Sampaikan Aspirasi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section id="informasi" class="py-16 bg-white hidden">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-blue-800 mb-12 section-title">Informasi Terkini</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold text-blue-800 mb-2">Jadwal Kegiatan</h4>
+                    <p class="text-gray-600">Lihat jadwal kegiatan MPK dan sekolah untuk minggu ini dan mendatang.</p>
+                    <a href="#jadwal" class="text-blue-600 mt-4 block" onclick="showSection('jadwal')">Selengkapnya →</a>
+                </div>
+
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold text-blue-800 mb-2">Struktur MPK</h4>
+                    <p class="text-gray-600">Kenal lebih dekat dengan anggota MPK yang akan menjadi perwakilan siswa.</p>
+                    <a href="#" class="text-blue-600 mt-4 block">Selengkapnya →</a>
+                </div>
+
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold text-blue-800 mb-2">Berita Terbaru</h4>
+                    <p class="text-gray-600">Update informasi terbaru dari MPK untuk seluruh siswa SMA Negeri 1 Alas.</p>
+                    <a href="#" class="text-blue-600 mt-4 block">Selengkapnya →</a>
+                </div>
+
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold text-blue-800 mb-2">Arsip Dokumen</h4>
+                    <p class="text-gray-600">Kumpulan dokumen penting MPK yang dapat diakses oleh seluruh siswa.</p>
+                    <a href="#" class="text-blue-600 mt-4 block">Selengkapnya →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jadwal Kegiatan Section -->
+    <section id="jadwal" class="py-16 bg-white hidden">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-blue-800 mb-12 section-title">Jadwal Kegiatan</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr class="bg-blue-600 text-white">
+                            <th class="py-3 px-4 border-b">Kegiatan</th>
+                            <th class="py-3 px-4 border-b">Jadwal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b">Evabul</td>
+                            <td class="py-3 px-4 border-b">Minggu ke-4, Hari Jumat setiap bulannya</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b">Evakin 1</td>
+                            <td class="py-3 px-4 border-b">Minggu ke-1, Bulan Januari</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b">Evakin 2</td>
+                            <td class="py-3 px-4 border-b">Minggu ke-4, Bulan Juli</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-3 px-4 border-b">Razia Benda Terlarang</td>
+                            <td class="py-3 px-4 border-b">Rahasiaa donggg, heheh 😂</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tata Tertib Section -->
+    <section id="tatib" class="py-16 bg-gray-50 hidden">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-blue-800 mb-12 section-title">Tata Tertib Siswa</h3>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    <div class="md:col-span-1 bg-blue-600 p-6 text-white">
+                        <h4 class="text-xl font-bold mb-4">Peraturan Sekolah</h4>
+                        <p>Kumpulan peraturan yang harus dipatuhi oleh seluruh siswa SMA Negeri 1 Alas.</p>
+                        <img src="https://placehold.co/300x200" alt="Ilustrasi siswa membaca buku tata tertib dengan latar biru" class="mt-6 rounded-lg" />
+                    </div>
+                    <div class="md:col-span-2 p-6">
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h5 class="font-semibold text-blue-800">Ketentuan Umum</h5>
+                                <p class="text-gray-600 mt-2">Content bisa ditambahkan disini...</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h5 class="font-semibold text-blue-800">Sanksi Pelanggaran</h5>
+                                <p class="text-gray-600 mt-2">Content bisa ditambahkan disini...</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h5 class="font-semibold text-blue-800">Hak dan Kewajiban Siswa</h5>
+                                <p class="text-gray-600 mt-2">Content bisa ditambahkan disini...</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h5 class="font-semibold text-blue-800">Aturan Khusus</h5>
+                                <p class="text-gray-600 mt-2">Content bisa ditambahkan disini...</p>
+                            </div>
+                        </div>
+                        <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Sembunyikan semua section yang ada
+            document.querySelectorAll('section').forEach(function(section) {
+                section.classList.add('hidden');
+            });
+
+            // Tampilkan section yang dipilih
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        function openGoogleForm() {
+            // Arahkan ke Google Formulir
+            window.open('https://forms.gle/TFi1X72kE8ivTLtKA', '_blank');
+        }
+
+        function openInstagram() {
+            // Arahkan ke Instagram MPK
+            window.open('https://www.instagram.com/mpksmanas_/', '_blank');
+        }
+    </script>
+</body>
+</html>
