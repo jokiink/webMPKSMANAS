@@ -91,6 +91,7 @@
                         <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('informasi')">Informasi</a></li>
                         <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('tatib')">Tata Tertib</a></li>
                         <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('jadwal')">Jadwal Kegiatan</a></li>
+                        <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="showSection('dokumentasi')">Jadwal Kegiatan</a></li>
                         <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="openGoogleForm()">Lapor MPK!</a></li>
                         <li><a href="#" class="nav-link px-3 py-2 rounded-lg hover:bg-blue-700 transition" onclick="openInstagram()">Hubungi Kami</a></li>
                     </ul>
@@ -160,7 +161,7 @@
                     </div>
                     <h4 class="text-lg font-semibold text-blue-800 mb-2">Arsip dan Dokumentasi</h4>
                     <p class="text-gray-600">Kumpulan Dokumentasi kegiatan MPK yang dapat diakses oleh seluruh siswa.</p>
-                    <a href="#" class="text-blue-600 mt-4 block">Selengkapnya →</a>
+                    <a href="#jadwal" class="text-blue-600 mt-4 block" onclick="showSection('dokumentasi')">Selengkapnya →</a>
                 </div>
             </div>
         </div>
@@ -201,6 +202,148 @@
         </div>
     </section>
 
+    <!-- Dokumentasi -->
+     <section id="dokumentasi" class="py-16 bg-white hidden">
+         <div class="container mx-auto px-6">
+        <h3 class="text-2xl font-bold text-blue-800 section-title">
+            DOKUMENTASI MPK
+        </h3>
+        <p class="text-gray-500 mt-4 mb-8">
+            Setiap momen memiliki cerita dan kenangan tersendiri.
+        </p>
+
+        <!-- Galeri 10 Foto -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+            <!-- Foto 1 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="rio.png" alt="Sekretaris I MPK 2025-2026"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Sekretaris I MPK 24/25</h4>
+                    <p class="text-sm text-gray-500">sebagai bagian perubahan dan perjalanan indah bagi kami.</p>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="mpk1.jpeg" alt="MPK 24/25"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">MPK 24/25</h4>
+                    <p class="text-sm text-gray-500">"Mataku Siap Mengawasimu"</p>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="mpk2.jpeg" alt="Kebersamaan"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Kebersamaan, PILKETOS 24/25</h4>
+                    <p class="text-sm text-gray-500">Satu cerita, banyak kenangan.</p>
+                </div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="mpk3.jpeg" alt="Kegiatan MPK"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">SSL 2024</h4>
+                    <p class="text-sm text-gray-500">Kebersamaan dalam aksi.</p>
+                </div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="foto5.jpg" alt="Pelantikan Pengurus"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Pelantikan Pengurus</h4>
+                    <p class="text-sm text-gray-500">Awal tanggung jawab baru.</p>
+                </div>
+            </div>
+
+            <!-- Foto 6 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="foto6.jpg" alt="Diskusi Organisasi"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Diskusi Organisasi</h4>
+                    <p class="text-sm text-gray-500">Bertukar pikiran dan gagasan.</p>
+                </div>
+            </div>
+
+            <!-- Foto 7 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="foto7.jpg" alt="Kegiatan Sekolah"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Kegiatan Sekolah</h4>
+                    <p class="text-sm text-gray-500">Mengukir pengalaman bersama.</p>
+                </div>
+            </div>
+
+            <!-- Foto 8 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="foto8.jpg" alt="Momen Kebersamaan"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Momen Kebersamaan</h4>
+                    <p class="text-sm text-gray-500">Kenangan yang berharga.</p>
+                </div>
+            </div>
+
+            <!-- Foto 9 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="foto9.jpg" alt="Dokumentasi Acara"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Dokumentasi Acara</h4>
+                    <p class="text-sm text-gray-500">Setiap momen punya cerita.</p>
+                </div>
+            </div>
+
+            <!-- Foto 10 -->
+            <div class="rounded-xl overflow-hidden shadow hover:shadow-lg">
+                <img src="foto10.jpg" alt="Kenangan MPK SMANAS"
+                    class="w-full aspect-[3/4] object-cover cursor-pointer"
+                    onclick="bukaFoto(this)">
+                <div class="p-3">
+                    <h4 class="font-semibold">Kenangan MPK SMANAS</h4>
+                    <p class="text-sm text-gray-500">Bersama dalam satu perjalanan.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Tampilan Foto Besar -->
+<div id="modalFoto"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4"
+    onclick="tutupFoto()">
+
+    <button class="absolute top-4 right-6 text-4xl text-white"
+        aria-label="Tutup foto">&times;</button>
+
+    <img id="fotoBesar" src="" alt="Foto dokumentasi"
+        class="max-w-full max-h-[85vh] object-contain">
+</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Tata Tertib Section -->
     <section id="tatib" class="py-16 bg-gray-50 hidden">
         <div class="container mx-auto px-6">
@@ -217,7 +360,7 @@
                         <div class="space-y-4">
                             <div class="border-l-4 border-blue-500 pl-4">
                                 <h5 class="font-semibold text-blue-800">Ketentuan Umum</h5>
-                                <p class="text-gray-600 mt-2">Content bisa ditambahkan disini...</p>
+                                <p class="text-gray-600 mt-2">.....................</p>
                             </div>
                             <div class="border-l-4 border-blue-500 pl-4">
                                 <h5 class="font-semibold text-blue-800">Sanksi Pelanggaran</h5>
@@ -252,13 +395,26 @@
 
         function openGoogleForm() {
             // Arahkan ke Google Formulir
-            window.open('https://forms.gle/TFi1X72kE8ivTLtKA', '_blank');
+            window.open('https://forms.gle/pDiMZGjsH8s4Dxri8', '_blank');
         }
 
         function openInstagram() {
             // Arahkan ke Instagram MPK
             window.open('https://www.instagram.com/mpksmanas_/', '_blank');
         }
+
+        function bukaFoto(img) {
+        document.getElementById('fotoBesar').src = img.src;
+        document.getElementById('modalFoto').classList.replace('hidden', 'flex');
+    }
+
+    function tutupFoto() {
+        document.getElementById('modalFoto').classList.replace('flex', 'hidden');
+    }
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') tutupFoto();
+    });
     </script>
 </body>
 </html>
