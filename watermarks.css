@@ -1,0 +1,26 @@
+/* WATERMARK FOTO */
+.gallery-slide::before{
+    content:"BY: Joki.ink / Satrio Ihwanul Mujahidin";
+    position:absolute;
+    z-index:3;
+    right:18px;
+    top:18px;
+    padding:8px 12px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:8px;
+    background:rgba(0,0,0,.35);
+    color:rgba(255,255,255,.85);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.5px;
+    backdrop-filter:blur(5px);
+    pointer-events:none;
+}
+@media(max-width:600px){
+    .gallery-slide::before{
+        top:12px;
+        right:12px;
+        padding:6px 8px;
+        font-size:9px;
+    }
+}
